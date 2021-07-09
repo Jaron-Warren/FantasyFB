@@ -16,6 +16,24 @@ export default class Player {
   }
 
   get Template() {
-    return ""
+    return `
+      <div div class="card" id = "${this.id}" >
+        <div class="card-body">
+          <h5 class="card-title">${this.name} ${this.team}</h5>
+          <p class="card-text">
+            <div>
+              ${this.photo}
+            </div>
+            Firstname: ${this.firstName}
+            Lastname: ${this.lastName}
+            Status: ${this.status}
+            Age: ${this.age}
+            Jersey: ${this.jersey}
+            Bye: ${this.bye}
+            Posistion: ${this.position}
+          </p>
+        </div>
+      </div>
+      `
   }
 }

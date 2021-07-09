@@ -1,7 +1,7 @@
 import PlayerController from "./Controllers/PlayerController.js"
 
-class App {
+class app {
   playerController = new PlayerController()
 }
 
-window["app"] = new App();
+window["app"] = new app();
